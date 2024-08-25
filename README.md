@@ -1,2 +1,2 @@
 # MY_LOSS
-muktis linux operating system selector
+WELCOME TO MUKTI's YEARLY LINUX OPERATING SYSTEM SELECTOR
