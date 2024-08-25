@@ -2,45 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY-LOSS</title>
 </head>
 <style>
+   *{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+   }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: purple;
+      color: goldenrod;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a, .dropbtn {
+      display: inline-block;
+      color: goldenrod;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: goldenrod;
+      color: purple;
+    }
+    
+    li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: purple;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: goldenrod;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: gold;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
     .button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background-color: purple; 
+      color: goldenrod; 
+       border: 2px solid plum;
+    }
 
-.button {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #7e04aa;
-}
+    .button-container {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
 
-.button:hover {
-  background-color: #7e04aa;
-  color: white;
-}
+    .button:hover {
+      background-color: goldenrod;
+      color: purple;
+    }
 
+    h1{
+      color: purple;
+    }
 </style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">More About the Project</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">MUKTI</a>
+                <div class="dropdown-content">
+                  <a href="#">Main Page</a>
+                  <a href="#">Telegram</a>
+                  <a href="#">Instagram</a>
+                </div>
+            </li>
+            <div style="float: right;">
+            <li><a href="#">Source Code</a></li>
+            <li style="float: left;"><a href="#">About US</a></li></div>
+        </ul>
+    </nav>
+
+    <h1>WELCOME TO <i>MUKTI'S YEARLY - LINUX OPERATING SYSTEM SELECTOR</i></h1>
+    <div class="button-container">
+      <button class="button button" onclick="myFunction()">CLICK HERE TO GET STARTED</button>
+    </div>
+
 <script>
     function myFunction() {
       location.replace("1.html")
     }
     </script>
-<body>
-  <div id="Start">
-    <h1>WELCOME TO MUKTI OPERATING SYSTEM SELECTOR</h1>
 
-    <button class="button button" onclick="myFunction()">CLICK HERE TO GET STARTED</button>
+
+    
+    
 </body>
 </html>
