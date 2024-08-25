@@ -29,7 +29,7 @@ function displayQuestion() {
     questionContainer.innerHTML = `
         <h2>${questions[currentQuestionIndex].question}</h2>
         <ul>
-            ${questions[currentQuestionIndex].options.map(option => `<li><input type="radio" name="answer" value="${option}"> ${option}</li>`).join('')}
+            ${questions[currentQuestionIndex].options.map(option => `<li class="ans"><input type="radio" name="answer" value="${option}"> ${option}</li>`).join('')}
         </ul>
     `;
 }
