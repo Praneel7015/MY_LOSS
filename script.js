@@ -27,8 +27,8 @@ let userAnswers = [];
 function displayQuestion() {
     const questionContainer = document.getElementById("question-container");
     questionContainer.innerHTML = `
-        <h2>${questions[currentQuestionIndex].question}</h2>
-        <ul>
+        <h2 style="color: purple;">${questions[currentQuestionIndex].question}</h2>
+        <ul class="ansbox">
             ${questions[currentQuestionIndex].options.map(option => `<li class="ans"><input type="radio" name="answer" value="${option}"> ${option}</li>`).join('')}
         </ul>
     `;
