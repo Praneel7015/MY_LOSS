@@ -1,2 +1,2 @@
 # MY-LOSS
-WELCOME TO MUKTI's Yearly Linux Operating System Selector
+Welcome to MUKTI's Yearly Linux Operating System Selector
