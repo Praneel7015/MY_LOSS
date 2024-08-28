@@ -920,7 +920,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
     console.log(scores);
     //Q14
     if(userAnswers[13] === 1){
-        scores['arch'] += 0;
+        scores['arch'] += 10;
         scores['manjaro'] += 4;
         scores['fedora'] += 4;
         scores['mint'] += 5;
@@ -933,7 +933,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['pop'] += 5;
     }
     else if(userAnswers[13] === 2){
-        scores['arch'] += 5;
+        scores['arch'] += 6;
         scores['manjaro'] += 5;
         scores['fedora'] += 5;
         scores['mint'] += 5;

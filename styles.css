@@ -8,12 +8,13 @@
   }
 
   *{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    font-family: Times, 'Times New Roman', serif
   }
 
    h1{
-    color: var(--opcolor);
+    color: black;
+    text-align: center;
+
   }
   body{
    background-image: url("images/image.png");
