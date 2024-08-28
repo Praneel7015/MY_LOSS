@@ -94,16 +94,39 @@ li{
     background-color: var(--opcolor);
     transition: all 0.5s ease;
 }
+
+#op1:hover{
+    background-color: var(--opselected);
+    transition: all 0.5s ease;
+}
+
 #op2{
     background-color: var(--opcolor);
     transition: all 0.5s ease;
 }
+
+#op2:hover{
+    background-color: var(--opselected);
+    transition: all 0.5s ease;
+}
+
 #op3{
     background-color: var(--opcolor);
     transition: all 0.5s ease;
 }
+
+#op3:hover{
+    background-color: var(--opselected);
+    transition: all 0.5s ease;
+}
+
 #op4{
     background-color: var(--opcolor);
+    transition: all 0.5s ease;
+}
+
+#op4:hover{
+    background-color: var(--opselected);
     transition: all 0.5s ease;
 }
 .button-container{
@@ -123,6 +146,11 @@ li{
     color:var(--opcolor);
     line-height: 0rem;
     padding-bottom: 3px;
+}
+
+.button-contaner :hover{
+    background-color: yellow;
+    color: var(--opselected);
 }
 
 /*Breakpoints*/
