@@ -188,7 +188,7 @@ function displayResults() {
         'arch': 0,
         'opensuse':0,
         'kali':0,
-        'mukthi':0
+        'mukti':0
     };
 // 10 - goated
 // 5 - good
@@ -225,7 +225,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 9;
         scores['kde'] += 10;
         scores['kali'] += 8;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -238,7 +238,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 4;
         scores['kde'] += 5;
         scores['kali'] += 4;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 5;
         scores['opensuse'] += 5;
         scores['pop'] += 5;
@@ -251,7 +251,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 5;
@@ -264,7 +264,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 6;
         scores['pop'] += 8;
@@ -279,7 +279,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 5;
@@ -292,7 +292,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 4;
         scores['kde'] += 5;
         scores['kali'] += 4;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 5;
         scores['opensuse'] += 5;
         scores['pop'] += 5;
@@ -305,7 +305,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 6;
         scores['pop'] += 8;
@@ -318,7 +318,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 0;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 8;
         scores['pop'] += 10;
@@ -333,7 +333,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 3;
-        scores['mukthi'] += 4;
+        scores['mukti'] += 4;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -346,7 +346,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 4;
+        scores['mukti'] += 4;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -359,7 +359,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 5;
         scores['kali'] += 3;
-        scores['mukthi'] += 2;
+        scores['mukti'] += 2;
         scores['debian'] += 10;
         scores['opensuse'] += 7;
         scores['pop'] += 10;
@@ -372,7 +372,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 0;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 8;
         scores['pop'] += 10;
@@ -387,7 +387,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 5;
-        scores['mukthi'] += 10;
+        scores['mukti'] += 10;
         scores['debian'] += 10;
         scores['opensuse'] += 8;
         scores['pop'] += 10;
@@ -400,7 +400,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 3;
         scores['kde'] += 7;
         scores['kali'] += 7;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 3;
         scores['opensuse'] += 6;
         scores['pop'] += 5;
@@ -413,7 +413,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 5;
-        scores['mukthi'] += 10;
+        scores['mukti'] += 10;
         scores['debian'] += 10;
         scores['opensuse'] += 8;
         scores['pop'] += 10;
@@ -426,7 +426,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 3;
         scores['kde'] += 7;
         scores['kali'] += 7;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 3;
         scores['opensuse'] += 6;
         scores['pop'] += 5;
@@ -441,7 +441,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 3;
         scores['kde'] += 7;
         scores['kali'] += 7;
-        scores['mukthi'] += Infinity;
+        scores['mukti'] += Infinity;
         scores['debian'] += 3;
         scores['opensuse'] += 6;
         scores['pop'] += 5;
@@ -454,7 +454,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 6;
         scores['pop'] += 8;
@@ -467,7 +467,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 5;
         scores['kde'] += 7;
         scores['kali'] += 10;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 5;
         scores['opensuse'] += 6;
         scores['pop'] += 4;
@@ -480,7 +480,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 0;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 8;
         scores['pop'] += 10;
@@ -495,7 +495,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 7;
+        scores['mukti'] += 7;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -508,7 +508,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 5;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 10;
         scores['opensuse'] += 8;
         scores['pop'] += 7;
@@ -521,7 +521,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 7;
         scores['kde'] += 4;
         scores['kali'] += 2;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 8;
         scores['opensuse'] += 4;
         scores['pop'] += 4;
@@ -534,7 +534,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 3;
         scores['kali'] += -1;
-        scores['mukthi'] += -1;
+        scores['mukti'] += -1;
         scores['debian'] += 10;
         scores['opensuse'] += 5;
         scores['pop'] += 5;
@@ -549,7 +549,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 5;
         scores['kali'] += 0;
-        scores['mukthi'] += -1;
+        scores['mukti'] += -1;
         scores['debian'] += 10;
         scores['opensuse'] += 7;
         scores['pop'] += 8;
@@ -562,7 +562,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10; 
@@ -575,7 +575,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 5;
         scores['kali'] += 0;
-        scores['mukthi'] += -1;
+        scores['mukti'] += -1;
         scores['debian'] += 10;
         scores['opensuse'] += 7;
         scores['pop'] += 8;
@@ -588,7 +588,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10; 
@@ -603,7 +603,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 10;
+        scores['mukti'] += 10;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10; 
@@ -616,7 +616,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10; 
@@ -629,7 +629,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 0;
         scores['kali'] += 10;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 0; 
@@ -642,7 +642,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 6;
         scores['kali'] += 0;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 8;
         scores['pop'] += 7;
@@ -657,7 +657,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 5;
         scores['kde'] += 10;
         scores['kali'] += 15;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 10;
         scores['opensuse'] += 5;
         scores['pop'] += 5;
@@ -670,7 +670,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 7;
+        scores['mukti'] += 7;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -683,7 +683,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 7;
+        scores['mukti'] += 7;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -696,7 +696,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 7;
         scores['kde'] += 10;
         scores['kali'] += 15;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 7;
         scores['opensuse'] += 8;
         scores['pop'] += 5;
@@ -711,7 +711,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 7;
         scores['kde'] += 7;
         scores['kali'] += 10;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 7;
         scores['opensuse'] += 7;
         scores['pop'] += 6; 
@@ -724,7 +724,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 10;
         scores['opensuse'] += 7;
         scores['pop'] += 7;
@@ -737,7 +737,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 10;
         scores['opensuse'] += 7;
         scores['pop'] += 7;
@@ -750,7 +750,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 3;
         scores['kali'] += 0;
-        scores['mukthi'] += 3;
+        scores['mukti'] += 3;
         scores['debian'] += 10;
         scores['opensuse'] += 7;
         scores['pop'] += 7;
@@ -765,7 +765,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 8;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 8;
         scores['opensuse'] += 8;
         scores['pop'] += 7;
@@ -778,7 +778,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 10;
+        scores['mukti'] += 10;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -791,7 +791,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 8;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -804,7 +804,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 10;
+        scores['mukti'] += 10;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -819,7 +819,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -832,7 +832,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 7;
         scores['pop'] += 7;
@@ -845,7 +845,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 7;
         scores['pop'] += 7;
@@ -858,7 +858,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -873,7 +873,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 7;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 5;
         scores['pop'] += 5;
@@ -886,7 +886,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -899,7 +899,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 3;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -912,7 +912,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 10;
+        scores['mukti'] += 10;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -927,7 +927,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 5;
         scores['kde'] += 5;
         scores['kali'] += 3;
-        scores['mukthi'] += -1;
+        scores['mukti'] += -1;
         scores['debian'] += 5;
         scores['opensuse'] += 5;
         scores['pop'] += 5;
@@ -940,7 +940,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 5;
         scores['kde'] += 5;
         scores['kali'] += 5;
-        scores['mukthi'] += 0;
+        scores['mukti'] += 0;
         scores['debian'] += 5;
         scores['opensuse'] += 5;
         scores['pop'] += 5;
@@ -953,7 +953,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
@@ -966,7 +966,7 @@ trust me, no ML got hand on this on 14 questions (pls hire us we do good stuff)*
         scores['ubuntu'] += 10;
         scores['kde'] += 10;
         scores['kali'] += 10;
-        scores['mukthi'] += 5;
+        scores['mukti'] += 5;
         scores['debian'] += 10;
         scores['opensuse'] += 10;
         scores['pop'] += 10;
