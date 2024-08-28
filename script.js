@@ -12,6 +12,7 @@ let ball7=document.querySelector(".manjaro");
 let ball8=document.querySelector(".kde_plasma");
 let ball9=document.querySelector(".opensuse");
 let ball10=document.querySelector(".kali");
+let ball11=document.querySelector(".mukti")
 
 let main=document.getElementById("main");
 
@@ -66,6 +67,11 @@ let w10 = Math.floor(Math.random()*(main.offsetWidth));
 let h10 = Math.floor(Math.random()*(main.offsetHeight));
 let s10 = getRndInteger(50,100);
 let a10 = parseFloat(Math.random()*(2*Math.PI));
+
+let w11 = Math.floor(Math.random()*(main.offsetWidth));
+let h11 = Math.floor(Math.random()*(main.offsetHeight));
+let s11 = getRndInteger(50,100);
+let a11 = parseFloat(Math.random()*(2*Math.PI));
 
 
 let radius = 50;
@@ -189,6 +195,14 @@ function move_ball(){
     a10 = func_call10[3];
     ball10.style.left=`${w10}px`;
     ball10.style.top=`${h10}px`;
+
+    let func_call11 = mover(w11,h11,s11,a11);
+    w11 = func_call11[0];
+    h11 = func_call11[1];
+    s11 = func_call11[2];
+    a11 = func_call11[3];
+    ball11.style.left=`${w11}px`;
+    ball11.style.top=`${h11}px`;
     
 }
 
