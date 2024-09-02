@@ -1,0 +1,2304 @@
+/* :root{
+    --headcolor:#393E46;
+    --bgcolor:#393E46;
+    --quescont:#EEEEEE;
+    --opcolor:#00ADB5;
+    --opselected:#56DECA;
+    --op:0.9;
+} */
+
+/* :root{
+    --headcolor:#F2613F;
+    --bgcolor:#481E14;
+    --quescont:#0C0C0C;
+    --opcolor:#F2613F;
+    --opselected:#9B3922;
+    --op:0.9;
+} */
+
+/* :root{
+    --headcolor:#FF204E;
+    --bgcolor:#00224D;
+    --quescont:#5D0E41;
+    --opcolor:#FF204E;
+    --opselected:#A0153E;
+    --op:0.9;
+} */
+/* :root{
+    --headcolor:#0F1215;
+    --bgcolor:#0F1215;
+    --quescont:#CAE2C2;
+    --opcolor:#317B91;
+    --opselected:#59A8B3;
+    --op:0.9;
+} */
+
+:root{
+    --headcolor:lightgray;
+    --bgcolor:#121212;
+    --quescont:#181818;
+    --opcolor:#911104;
+    --opselected:#560602;
+    /* --opselected:#730C02; */
+    --nxtcolor:#59A8B3;
+    --op:0.9;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+body {
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+.bg-container{
+    background-color: var(--bgcolor);
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    display: flex;
+    position:relative;
+}
+.ques-container{
+    background-color: var(--quescont);
+    height: 70vh;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 1;
+    opacity: var(--op);
+    margin-top:40px;
+    /* width: 65vw; */
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    border-radius: 100%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.img{
+    width: 60px;
+    height: 60px;
+}
+
+#question{
+    color: var(--headcolor);
+    margin-top:30px
+}
+li{
+    list-style-type: none;
+    padding:40px;
+    font-size:25px;
+    text-align: center;
+    margin-bottom:10px;
+    color:var(--bgcolor);
+    border-radius: 10px;
+    font-weight: bold;
+}
+li:hover{
+    background-color: var(--opselected) !important;
+}
+.op-cont{
+    margin-top:50px;
+}
+#op1{
+    background-color: var(--opcolor);
+    transition: all 0.5s ease;
+}
+#op2{
+    background-color: var(--opcolor);
+    transition: all 0.5s ease;
+}
+#op3{
+    background-color: var(--opcolor);
+    transition: all 0.5s ease;
+}
+#op4{
+    background-color: var(--opcolor);
+    transition: all 0.5s ease;
+}
+.button-container{
+    margin-top:0vh;
+    text-align: center;
+    font-size:20px
+}
+.button{
+    text-align: center;
+    height: 40px;
+    width:100px;
+    border-radius: 10px;
+    font-size:20px;
+    border-width:0px;
+    margin:10px;
+    background-color: var(--bgcolor);
+    color:var(--nxtcolor);
+    line-height: 0rem;
+    padding-bottom: 3px;
+}
+
+.button:hover{
+    opacity: 0.9;
+    background-color: #000000;
+}
+
+ .emote{
+    background-color:transparent;
+    height: 40px;
+    width:30%;
+    margin-bottom:30px;
+    display: relative;  
+    margin-left: 35%;
+} 
+#second-place{
+    margin-left: -6%;
+}
+.circle-emote{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 100%;
+    cursor: pointer;
+    top:7%;
+}
+
+.img-pod{
+    width: 100px;
+    height: 100px;
+}
+.crown{
+    position:absolute;
+    font-size: 50px;
+    top:-1%;
+    left: 35.5%;
+    rotate: -10deg;
+    z-index: 4;
+}
+
+.cloud_win{
+    position:absolute;
+    z-index: 3;
+    height: 100px;
+    top:2%;
+    left:29%;
+    transform: scale(0.1);
+    transition:transform 0.5s, left 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.open_cloud{
+    visibility: visible;
+    top:2%;
+    left:28%;
+    transform: scale(1);
+    transition:transform 0.5s, left 0.5s ease-in-out;
+}
+
+.cloud_sec{
+    position:absolute;
+    z-index: 3;
+    height: 100px;
+    top:2%;
+    left:64.5%;
+    transform: scale(0.1) rotateY(180deg);
+    transition:transform 0.5s, left 0.5s ease-in-out;
+    visibility: hidden;
+}
+.open_cloud_sec{
+    visibility: visible;
+    top:2%;
+    left:65.25%;
+    transform: scale(1) rotateY(180deg);
+    transition:transform 0.5s, left 0.5s ease-in-out;
+}
+
+.win{
+    position:absolute;
+    z-index: 4;
+    height: 100px;
+    top:4.5%;
+    left:30%;
+    transform: scale(0.1);
+    transition:transform 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.lose{
+    position:absolute;
+    z-index: 4;
+    height: 100px;
+    top:4.75%;
+    left:67.5%;
+    transform: scale(0.1);
+    transition:transform 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.appear{
+    transform: scale(1);
+    visibility: visible;
+    transition:transform 0.5s ease-in-out;
+}
+
+.img-pod{
+    z-index:1;
+    position:absolute;
+    visibility: hidden;
+    transform : scale(0.1);
+    transition:visibility 0.5s, transform 0.3s ease-in-out;
+}
+
+.top-pod{
+    z-index:2;
+    transform : scale(1);
+    visibility: visible;
+}
+.poop{
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    top:2%;
+    left:61%;
+    rotate: 13deg;
+    z-index: 4;
+}
+
+
+/*Podium*/
+
+body {
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:url("/images/tech-op.jpg");
+    background-size: cover ;
+    /* opacity: 0.8; */
+    /* background-color: var(--bgcolor); */
+    /* animation:appear 1s forwards; */
+}
+
+#podium-container{
+    visibility: hidden;
+    position: absolute;
+    z-index: 4;
+}
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    margin-top:320px;
+}
+.podium-spot {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    width: 120px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#first-podium{
+    height: 0px;
+    opacity: 0;
+    background-color: gold;
+    color: #333;
+}
+  
+#second-podium{
+    height: 0px;
+    opacity: 0;
+    background-color: silver;
+    color: #333;
+}
+  
+#third-podium {
+    height: 0px;
+    opacity: 0;
+    background-color: #cd7f32; /* Bronze */
+    color: #333;
+
+}
+
+.podgrowclass3{
+    animation:growpodthird 2s 0.5s forwards;
+}
+ 
+.podgrowclass2{
+    animation:growpodsec 2s 0.75s forwards;
+}
+
+.podgrowclass1{
+    animation:growpodfirst 2s 1.25s forwards;
+}
+  .spot-number-1 {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    right: 44%;
+  }
+  .spot-number-2 {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    right: 44%;
+  }
+  .spot-number-3 {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    right: 44%;
+  }
+  
+  .spot-title-1 {
+    margin-top: 70%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .spot-title-2 {
+    margin-top: 65%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .spot-title-3 {
+    margin-top: 50%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .transitioning {
+
+    transition: all 1.5s 3s ease-in-out;
+    position: absolute;
+    z-index: 100;
+  }
+
+
+  body {
+    display: relative;
+}
+
+.line-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    transform-origin: bottom;
+    animation: fadeInText 2s 1s ease-in-out forwards;
+}
+.line1 {
+    bottom: 115%;
+    left: -10%;
+    
+}
+
+.line2 {
+    bottom: 120%;
+    left: 0%;
+}
+
+.line3 {
+    bottom: 125%;
+    left: 0%;
+}
+
+.line4 {
+    bottom: 135%;
+    left: 0%;
+}
+
+.line5 {
+    bottom: 135%;
+    left: 0%;
+}
+
+.line6 {
+    bottom: 135%;
+    left: 0%;
+}
+.line7 {
+    bottom: 125%;
+    left: 20%;
+}
+
+.line8 {
+    bottom: 120%;
+    left: 5%;
+}
+
+.line9 {
+    bottom: 115%;
+    left: 20%;
+}
+
+.line1_anim{
+    animation: rotate1 1s 5s forwards ease-in-out;
+}
+.line2_anim{
+    animation: rotate2 1s 5s forwards ease-in-out;
+}
+.line3_anim{
+    animation: rotate3 1s 5s forwards ease-in-out;
+}
+.line4_anim{
+    animation: rotate4 1s 5s forwards ease-in-out;
+}
+.line5_anim{
+    animation: rotate5 1s 5s forwards ease-in-out;
+}
+.line6_anim{
+    animation: rotate6 1s 5s forwards ease-in-out;
+}
+.line7_anim{
+    animation: rotate7 1s 5s forwards ease-in-out;
+}
+.line8_anim{
+    animation: rotate8 1s 5s forwards ease-in-out;
+}
+.line9_anim{
+    animation: rotate9 1s 5s forwards ease-in-out;
+}
+
+.linegrow1 {
+    width: 3px;
+    height: 0px;
+    background-color: #666;
+    animation: growLine1 1s 5s ease-out forwards;
+}
+.linegrow2 {
+    width: 3px;
+    height: 0px;
+    background-color: #666;
+    animation: growLine2 1s 5s ease-out forwards;
+}
+.linegrow3 {
+    width: 3px;
+    height: 0px;
+    background-color: #666;
+    animation: growLine3 1s 5s ease-out forwards;
+}
+
+.description {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transform: translateY(10px);
+    animation-fill-mode: forwards;
+    margin-bottom:5px;
+}
+.desc_anim{
+    animation: fadeInText 1.5s 7s forwards;
+}
+
+.highlight {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+@keyframes growpodsec{
+    0%{
+        height:0px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        height: 160px;
+    }
+}
+
+@keyframes growpodfirst{
+    0%{
+        height:0px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        height: 200px;
+    }
+}
+
+@keyframes growpodthird{
+    0%{
+        height:0px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        height: 130px;
+    }
+}
+
+@keyframes growLine1 {
+   to{
+    height: 200px;
+    opacity: 0.6;
+   }
+}
+@keyframes growLine2 {
+    to{
+        height: 200px;
+        opacity: 0.6;
+    }
+}
+@keyframes growLine3 {
+    to{
+        height: 200px;
+        opacity: 0.6;
+    }
+ }
+
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes rotate1{
+    to{
+        transform: rotate(-100deg);
+    }
+}
+@keyframes rotate2{
+    to{
+        transform: rotate(-65deg);
+    }
+}
+@keyframes rotate3{
+    to{
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes rotate4{
+    to{
+        transform: rotate(-45deg);
+    }
+}
+@keyframes rotate5{
+    to{
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotate6{
+    to{
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotate7{
+    to{
+        transform: rotate(30deg);
+    }
+}
+@keyframes rotate8{
+    to{
+        transform: rotate(65deg);
+    }
+}
+@keyframes rotate9{
+    to{
+        transform: rotate(100deg);
+    }
+}
+
+
+
+
+  @keyframes firework {
+    0% { transform: translate(var(--x), var(--initialY)); width: var(--initialSize); opacity: 1; }
+    50% { width: 0.5vmin; opacity: 1; }
+    100% { width: var(--finalSize); opacity: 0; }
+  }
+  
+  .firework, .firework::before, .firework::after{
+    --initialSize: 0.5vmin;
+    --finalSize: 45vmin;
+    --particleSize: 0.2vmin;
+    --color1: yellow;
+    --color2: khaki;
+    --color3: white;
+    --color4: lime;
+    --color5: gold;
+    --color6: mediumseagreen;
+    --y: -30vmin;
+    --x: -50%;
+    --initialY: 60vmin;
+    content: "";
+    animation: firework 3s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, var(--y));
+    width: var(--initialSize);
+    aspect-ratio: 1;
+    background: 
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
+      radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
+      radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
+      radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
+      
+      radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%,
+      radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%,
+      radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
+      radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
+      radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
+
+      radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%,
+      radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%,
+      radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 10% 60%,
+      radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
+      radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
+      radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
+
+      radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
+      radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%,
+      radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 100% 43%,
+      radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
+      radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
+      radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
+
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22% 14%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 34%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 10% 29%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 31% 37%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 28% 7%,
+      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 13% 42%
+      ;
+    background-size: var(--initialSize) var(--initialSize);
+    background-repeat: no-repeat;
+  }
+  
+  .firework::before {
+    --x: -50%;
+    --y: -50%;
+    --initialY: -50%;
+
+    transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
+  }
+  
+  .firework::after {
+    --x: -50%;
+    --y: -50%;
+    --initialY: -50%;
+    transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
+  }
+  
+  .firework:nth-child(2) {
+    --x: 30vmin;
+  }
+  
+  .firework:nth-child(2),
+  .firework:nth-child(2)::before,
+  .firework:nth-child(2)::after {
+    --color1: pink;
+    --color2: violet;
+    --color3: fuchsia;
+    --color4: orchid;
+    --color5: plum;
+    --color6: lavender;  
+    --finalSize: 40vmin;
+    left: 30%;
+    top: 60%;
+    animation-delay: -0.25s;
+  }
+  
+  .firework:nth-child(3) {
+    --x: -30vmin;
+    --y: -50vmin;
+  }
+  
+  .firework:nth-child(3),
+  .firework:nth-child(3)::before,
+  .firework:nth-child(3)::after {
+    --color1: cyan;
+    --color2: lightcyan;
+    --color3: lightblue;
+    --color4: PaleTurquoise;
+    --color5: SkyBlue;
+    --color6: lavender;
+    --finalSize: 35vmin;
+    left: 70%;
+    top: 60%;
+    animation-delay: -0.4s;
+  }
+
+
+
+
+/*Break points*/
+
+
+@media screen and (min-width:340px) and (max-width: 376px){
+    /*main section*/
+    #main{
+        background-color: var(--bgcolor);
+        background-size: cover !important;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        display: flex !important;
+        position:relative !important;
+    }
+    .img{
+        width: 50px;
+        height: 50px;
+    }
+    .ques-container{
+        height: 77vh;
+        margin-top:60px;
+    }
+    #question{
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    .op-cont{
+        margin-top:30px;
+        margin-bottom:0px
+    }
+    li{
+        list-style-type: none;
+        padding:25px;
+        font-size:20px;
+        text-align: center;
+        margin-bottom:10px;
+        color:var(--bgcolor);
+        border-radius: 10px;
+        font-weight: bold;
+        height: 70px;
+        line-height: 20px;
+    }
+    .button{
+        margin:0px;
+        margin-left:10px;
+    }
+    /*emote bar*/
+    .emote{
+        height: 20px;
+        /* width:100%; */
+        margin-bottom:30px;
+        margin-left:23%;
+        text-align: left;
+    }
+    #second-place{
+        margin-left: 4%;
+    }
+    .img-pod{
+        width: 80px;
+        height: 80px;
+    }
+    .crown{
+        top:1%;
+        left: 27%;
+        font-size: 40px;
+    }
+    .poop{
+        height: 40px;
+        width: 40px;
+        top:3%;
+        left:65%;
+    }
+    .cloud{
+        height: 80px;
+    }
+    .cloud_win{
+        height: 80px;
+        left:11%;
+    }
+    .open_cloud{
+        left:3%;
+    }
+    .cloud_sec{
+        height: 80px;
+        left:76%;
+    }
+    .open_cloud_sec{
+        left:77%;
+    }
+    .win{
+        top:3.5%;
+        left:9.5%;
+    }
+    .lose{
+        top:3.5%;
+        left:84%;
+    }
+    .button-container{
+        margin-right:10px;
+    }
+    /*podium*/
+    body{
+        background-image: url("/images/tech-op-mob-2.jpg");
+        background-size: cover ;
+    }
+    .podium {
+        margin-top:400px;
+        padding:5px;
+        /* margin-right:50px; */
+        /* margin-left:50px; */
+    }
+    .podium-spot{
+        width: 120px;
+        padding: 10px;
+    }
+    
+    .line1 {
+        bottom: 120%;
+        left: 0%;
+        
+    }
+    .line2 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line3 {
+        bottom: 120%;
+        left:0%;
+    }
+    
+    .line4 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line5 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line6 {
+        bottom: 120%;
+        left: 0%;
+    }
+    .line7 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line8 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line9 {
+        bottom: 120%;
+        left: 0%;
+    }
+    @keyframes growLine1 {
+        to{
+         height: 100px;
+         opacity: 0.6;
+        }
+     }
+     @keyframes growLine2 {
+         to{
+             height: 200px;
+             opacity: 0.6;
+         }
+     }
+     @keyframes growLine3 {
+        to{
+            height: 300px;
+            opacity: 0.6;
+        }
+     }
+     .description {
+        font-size: 18px;
+    }
+    .highlight {
+        color: #e74c3c;
+        font-weight: bold;
+    }
+    @keyframes rotate1{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate2{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate3{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate4{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate5{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate6{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate7{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate8{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate9{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:376px) and (max-width: 415px){
+    /*main section*/
+    #main{
+        background-color: var(--bgcolor);
+        background-size: cover !important;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        display: flex !important;
+        position:relative !important;
+    }
+    .img{
+        width: 50px;
+        height: 50px;
+    }
+    .ques-container{
+        height: 77vh;
+        margin-top:60px;
+    }
+    #question{
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    .op-cont{
+        margin-top:30px;
+        margin-bottom:0px
+    }
+    li{
+        list-style-type: none;
+        padding:25px;
+        font-size:20px;
+        text-align: center;
+        margin-bottom:10px;
+        color:var(--bgcolor);
+        border-radius: 10px;
+        font-weight: bold;
+        height: 70px;
+        line-height: 20px;
+    }
+    .button{
+        margin:0px;
+        margin-left:10px;
+    }
+    /*emote bar*/
+    .emote{
+        height: 20px;
+        /* width:100%; */
+        margin-bottom:30px;
+        margin-left:23%;
+        text-align: left;
+    }
+    #second-place{
+        margin-left: 4%;
+    }
+    .img-pod{
+        width: 80px;
+        height: 80px;
+    }
+    .crown{
+        top:1%;
+        left: 27%;
+        font-size: 40px;
+    }
+    .poop{
+        height: 40px;
+        width: 40px;
+        top:3%;
+        left:65%;
+    }
+    .cloud{
+        height: 80px;
+    }
+    .cloud_win{
+        height: 80px;
+        left:11%;
+    }
+    .open_cloud{
+        left:3%;
+    }
+    .cloud_sec{
+        height: 80px;
+        left:76%;
+    }
+    .open_cloud_sec{
+        left:77%;
+    }
+    .win{
+        top:3.5%;
+        left:9.5%;
+    }
+    .lose{
+        top:3.5%;
+        left:84%;
+    }
+    .button-container{
+        margin-right:10px;
+    }
+    /*podium*/
+    body{
+        background-image: url("/images/tech-op-mob-2.jpg");
+        background-size: cover ;
+    }
+    .podium {
+        margin-top:400px;
+    }
+
+    .line1 {
+        bottom: 120%;
+        left: 10%;
+        
+    }
+    .line2 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line3 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line4 {
+        bottom: 120%;
+        left: 10%;
+    }
+    
+    .line5 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line6 {
+        bottom: 120%;
+        left: 10%;
+    }
+    .line7 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line8 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line9 {
+        bottom: 120%;
+        left: 10%;
+    }
+    @keyframes growLine1 {
+        to{
+         height: 100px;
+        }
+     }
+     @keyframes growLine2 {
+         to{
+             height: 200px;
+         }
+     }
+     @keyframes growLine3 {
+        to{
+            height: 300px;
+        }
+     }
+     .description {
+        font-size: 20px;
+    }
+    .highlight {
+        color: #e74c3c;
+        font-weight: 900;
+    }
+    @keyframes rotate1{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate2{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate3{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate4{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate5{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate6{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate7{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate8{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate9{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+
+@media screen and (min-height:800px) and (max-height: 1200px){
+    /*main section*/
+    #main{
+        background-color: var(--bgcolor);
+        background-size: cover !important;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        display: flex !important;
+        position:relative !important;
+    }
+    .img{
+        width: 50px;
+        height: 50px;
+    }
+    .ques-container{
+        height: 70vh;
+        margin-top:60px;
+    }
+    #question{
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    .op-cont{
+        margin-top:30px;
+        margin-bottom:0px
+    }
+    li{
+        list-style-type: none;
+        padding:25px;
+        font-size:20px;
+        text-align: center;
+        margin-bottom:10px;
+        color:var(--bgcolor);
+        border-radius: 10px;
+        font-weight: bold;
+        height: 90px;
+        line-height: 40px;
+    }
+    .button{
+        margin:0px;
+        margin-left:10px;
+    }
+    /*emote bar*/
+    .emote{
+        height: 20px;
+        /* width:100%; */
+        margin-bottom:30px;
+        margin-left:23%;
+        text-align: left;
+    }
+    #second-place{
+        margin-left: 4%;
+    }
+    .img-pod{
+        width: 80px;
+        height: 80px;
+    }
+    .crown{
+        top:1%;
+        left: 27%;
+        font-size: 40px;
+    }
+    .poop{
+        height: 40px;
+        width: 40px;
+        top:3%;
+        left:65%;
+    }
+    .cloud{
+        height: 80px;
+    }
+    .cloud_win{
+        height: 80px;
+        left:11%;
+    }
+    .open_cloud{
+        left:3%;
+    }
+    .cloud_sec{
+        height: 80px;
+        left:76%;
+    }
+    .open_cloud_sec{
+        left:77%;
+    }
+    .win{
+        top:3.5%;
+        left:9.5%;
+    }
+    .lose{
+        top:3.5%;
+        left:84%;
+    }
+    .button-container{
+        margin-right:10px;
+    }
+    /*podium*/
+    body{
+        background-image: url("/images/tech-op-mob-2.jpg");
+        background-size: cover ;
+    }
+    .podium {
+        margin-top:400px;
+    }
+
+    .line1 {
+        bottom: 120%;
+        left: 10%;
+        
+    }
+    .line2 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line3 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line4 {
+        bottom: 120%;
+        left: 10%;
+    }
+    
+    .line5 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line6 {
+        bottom: 120%;
+        left: 10%;
+    }
+    .line7 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line8 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line9 {
+        bottom: 120%;
+        left: 10%;
+    }
+    @keyframes growLine1 {
+        to{
+         height: 100px;
+        }
+     }
+     @keyframes growLine2 {
+         to{
+             height: 200px;
+         }
+     }
+     @keyframes growLine3 {
+        to{
+            height: 300px;
+        }
+     }
+     .description {
+        font-size: 20px;
+    }
+    .highlight {
+        color: #e74c3c;
+        font-weight: 900;
+    }
+    @keyframes rotate1{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate2{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate3{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate4{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate5{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate6{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate7{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate8{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate9{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:415px) and (max-width: 768px){
+    /*main section*/
+    .bg-container{
+        background-color: var(--bgcolor);
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        display: flex;
+        position:relative;
+    }
+    .img{
+        width: 50px;
+        height: 50px;
+    }
+    #question{
+        font-size: 30px;
+    }
+    .op-cont{
+        margin-top:30px
+    }
+    li{
+        list-style-type: none;
+        padding:25px;
+        font-size:25px;
+        text-align: center;
+        margin-bottom:10px;
+        color:var(--bgcolor);
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    /*emote bar*/
+    .emote{
+        height: 20px;
+        /* width:100%; */
+        margin-bottom:30px;
+        margin-left:25%;
+        text-align: left;
+    }
+    #second-place{
+        margin-left: -1%;
+    }
+    .crown{
+        top:0.5%;
+        left: 27%;
+    }
+    .poop{
+        top:3%;
+        left:63%;
+    }
+
+    .cloud_win{
+        height: 80px;
+        left:11%;
+    }
+    .open_cloud{
+        left:5%;
+    }
+    .cloud_sec{
+        height: 80px;
+        left:76%;
+    }
+    .open_cloud_sec{
+        left:75%;
+    }
+    .win{
+        top:4%;
+        left:17.5%;
+    }
+    .lose{
+        top:4%;
+        left:80%;
+    }
+    .button-container{
+        margin-right:10px;
+    }
+    /*podium*/
+    body{
+        background-image: url("/images/tech-op-mob-2.jpg");
+        background-size: cover ;
+    }
+    .podium {
+        margin-top:400px;
+    }
+
+    .line1 {
+        bottom: 120%;
+        left: 10%;
+        
+    }
+    .line2 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line3 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line4 {
+        bottom: 120%;
+        left: 10%;
+    }
+    
+    .line5 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line6 {
+        bottom: 120%;
+        left: 10%;
+    }
+    .line7 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line8 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line9 {
+        bottom: 120%;
+        left: 10%;
+    }
+    @keyframes growLine1 {
+        to{
+         height: 100px;
+        }
+     }
+     @keyframes growLine2 {
+         to{
+             height: 200px;
+         }
+     }
+     @keyframes growLine3 {
+        to{
+            height: 300px;
+        }
+     }
+     .description {
+        font-size: 20px;
+    }
+    .highlight {
+        color: #e74c3c;
+        font-weight: 900;
+    }
+    @keyframes rotate1{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate2{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate3{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate4{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate5{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate6{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate7{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate8{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate9{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 992px){
+    /*main section*/
+    .bg-container{
+        background-color: var(--bgcolor);
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        display: flex;
+        position:relative;
+    }
+    .img{
+        width: 50px;
+        height: 50px;
+    }
+    #question{
+        font-size: 40px;
+        margin-top:40px;
+    }
+    .op-cont{
+        margin-top:30px
+    }
+    li{
+        list-style-type: none;
+        padding:25px;
+        font-size:25px;
+        text-align: center;
+        margin-bottom:10px;
+        color:var(--bgcolor);
+        border-radius: 10px;
+        font-weight: bold;
+        height: 100px;
+        margin:15px;
+    }
+    /* .button{
+        height: 60px;
+        width: 180px;
+    }
+    .ans{
+        line-height: 65px;
+    } */
+    /*emote bar*/
+    .emote{
+        height: 20px;
+        /* width:32.5%; */
+        margin-bottom:30px;
+        margin-left:24%;
+        /* background-color: white; */
+        text-align: center;
+    }
+    #second-place{
+        margin-left: -1%;
+    }
+    .crown{
+        top:0.5%;
+        left: 30%;
+    }
+    .poop{
+        top:3%;
+        left:65%;
+    }
+
+    .cloud_win{
+        height: 80px;
+        left:17%;
+    }
+    .open_cloud{
+        left:18%;
+    }
+    .cloud_sec{
+        height: 80px;
+        left:74%;
+    }
+    .open_cloud_sec{
+        left:72.5%;
+    }
+    .win{
+        top:4%;
+        left:21.5%;
+    }
+    .lose{
+        top:4%;
+        left: 76%;
+    }
+    .button-container{
+        margin-right:10px;
+    }
+    /*podium*/
+    body{
+        background-image: url("/images/tech-op-mob-2.jpg");
+        background-size: cover ;
+    }
+    .podium {
+        margin-top:400px;
+    }
+
+    .line1 {
+        bottom: 120%;
+        left: 10%;
+        
+    }
+    .line2 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line3 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line4 {
+        bottom: 120%;
+        left: 10%;
+    }
+    
+    .line5 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line6 {
+        bottom: 120%;
+        left: 10%;
+    }
+    .line7 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line8 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line9 {
+        bottom: 120%;
+        left: 10%;
+    }
+    @keyframes growLine1 {
+        to{
+         height: 100px;
+        }
+     }
+     @keyframes growLine2 {
+         to{
+             height: 200px;
+         }
+     }
+     @keyframes growLine3 {
+        to{
+            height: 300px;
+        }
+     }
+     .description {
+        font-size: 20px;
+    }
+    .highlight {
+        color: #e74c3c;
+        font-weight: 900;
+    }
+    @keyframes rotate1{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate2{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate3{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate4{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate5{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate6{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate7{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate8{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate9{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width: 992px) and (min-height:1100px) and (max-height:1400px){
+    /*main section*/
+    .bg-container{
+        background-color: var(--bgcolor);
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        display: flex;
+        position:relative;
+    }
+    .img{
+        width: 50px;
+        height: 50px;
+    }
+    #question{
+        font-size: 40px;
+        margin-top:40px;
+    }
+    .op-cont{
+        margin-top:30px
+    }
+    li{
+        list-style-type: none;
+        padding:25px;
+        font-size:25px;
+        text-align: center;
+        margin-bottom:10px;
+        color:var(--bgcolor);
+        border-radius: 10px;
+        font-weight: bold;
+        height: 120px;
+        margin:15px;
+    }
+    .button{
+        height: 60px;
+        width: 180px;
+    }
+    .ans{
+        line-height: 65px;
+    }
+    /*emote bar*/
+    .emote{
+        height: 20px;
+        /* width:32.5%; */
+        margin-bottom:30px;
+        margin-left:24%;
+        /* background-color: white; */
+        text-align: center;
+    }
+    #second-place{
+        margin-left: -1%;
+    }
+    .crown{
+        top:0.5%;
+        left: 30%;
+    }
+    .poop{
+        top:3%;
+        left:65%;
+    }
+
+    .cloud_win{
+        height: 80px;
+        left:17%;
+    }
+    .open_cloud{
+        left:18%;
+    }
+    .cloud_sec{
+        height: 80px;
+        left:74%;
+    }
+    .open_cloud_sec{
+        left:72.5%;
+    }
+    .win{
+        top:4%;
+        left:21.5%;
+    }
+    .lose{
+        top:4%;
+        left: 76%;
+    }
+    .button-container{
+        margin-right:10px;
+    }
+    /*podium*/
+    body{
+        background-image: url("/images/tech-op-mob-2.jpg");
+        background-size: cover ;
+    }
+    .podium {
+        margin-top:400px;
+    }
+
+    .line1 {
+        bottom: 120%;
+        left: 10%;
+        
+    }
+    .line2 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line3 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line4 {
+        bottom: 120%;
+        left: 10%;
+    }
+    
+    .line5 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line6 {
+        bottom: 120%;
+        left: 10%;
+    }
+    .line7 {
+        bottom: 120%;
+        left: 0%;
+    }
+    
+    .line8 {
+        bottom: 120%;
+        left: -10%;
+    }
+    
+    .line9 {
+        bottom: 120%;
+        left: 10%;
+    }
+    @keyframes growLine1 {
+        to{
+         height: 100px;
+        }
+     }
+     @keyframes growLine2 {
+         to{
+             height: 200px;
+         }
+     }
+     @keyframes growLine3 {
+        to{
+            height: 300px;
+        }
+     }
+     .description {
+        font-size: 20px;
+    }
+    .highlight {
+        color: #e74c3c;
+        font-weight: 900;
+    }
+    @keyframes rotate1{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate2{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate3{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate4{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate5{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate6{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes rotate7{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate8{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes rotate9{
+        to{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@media screen and (max-height:610px){
+    li{
+        height: 90px;
+    }
+    .ans{
+        line-height: 10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) and (min-height:1000px) {
+    .bg-container{
+        background-color: var(--bgcolor);
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        display: flex;
+        position:relative;
+    }
+    #question{
+        font-size: 45px;
+        /* padding-top: ; */
+        margin-top:50px;
+        margin-bottom:40px;
+    }
+    li{
+        padding:40px;
+
+    }
+    .op-cont{
+        padding:20px;
+        padding-top:0px;
+    }
+    .ans{
+        height: 250px;
+        line-height: 175px;
+    }
+    .mcq{
+        margin-bottom: 20px;
+    }
+    .row{
+        margin-bottom:0px;
+        padding-bottom:0px;
+        margin-top:15px;
+    }
+    .ques-container{
+        margin-top:40px;
+        height: 65vh;
+    }
+    .button-container{
+        margin-top:0px;
+        padding-top:0px;
+        margin-right:5px;
+    }
+    .button{
+        height: 60px;
+        width: 180px;
+    }
+    .emote{
+        /* height: 20px; */
+        /* width:30%; */
+
+        /* margin-bottom:30px; */
+        /* margin-left:24%; */
+        height: 20px;
+        /* width:32.5%; */
+        margin-bottom:30px;
+        margin-left:24%;
+        /* background-color: white; */
+        text-align: center;
+    }
+    #second-place{
+        margin-left: 0%;
+    }
+    .crown{
+        font-size: 60px;
+        top:1.75%;
+        left: 32%;
+    }
+    .cloud{
+        height: 120px;
+    }
+    .poop{
+        height: 60px;
+        width: 60px;
+        top:3.25%;
+        left:64.5%;
+    }
+    .img-pod{
+        height: 140px;
+        width: 140px;
+    }
+    .cloud_win{
+        height: 80px;
+        left: 19%;
+    }
+    .open_cloud{
+        left:18%;
+    }
+    .cloud_sec{
+        height: 80px;
+        left:71%;
+    }
+    .open_cloud_sec{
+        left:72%;
+    }
+    .win{
+        top:3.75%;
+        left: 22%;
+    }
+    .lose{
+        top:3.75%;
+        left:76%;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1500px){
+    .bg-container{
+        background-color: var(--bgcolor);
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        display: flex;
+        position:relative;
+    }
+    #question{
+        font-size: 45px;
+        /* padding-top: ; */
+        margin-top:50px;
+        margin-bottom:40px;
+    }
+    li{
+        padding:40px;
+
+    }
+    .op-cont{
+        padding:20px;
+        padding-top:0px;
+    }
+    .ans{
+        height: 120px;
+        /* line-height: 90px; */
+    }
+    .mcq{
+        margin-bottom: 20px;
+    }
+    .row{
+        margin-bottom:0px;
+        padding-bottom:0px;
+        margin-top:15px;
+    }
+    .ques-container{
+        margin-top:60px;
+        height: 70vh;
+    }
+    .button-container{
+        margin-top:0px;
+        padding-top:0px;
+        margin-right:5px;
+    }
+    .button{
+        height: 50px;
+        width: 140px;
+    }
+    .emote{
+        /* height: 20px; */
+        /* width:30%; */
+
+        /* margin-bottom:30px; */
+        /* margin-left:24%; */
+        height: 20px;
+        /* width:32.5%; */
+        margin-bottom:30px;
+        margin-left:30%;
+        /* background-color: white; */
+        text-align: center;
+    }
+    #second-place{
+        margin-left: -6%;
+    }
+    .crown{
+        font-size: 60px;
+        top:-1%;
+        left: 35%;
+    }
+    .cloud{
+        height: 120px;
+    }
+    .poop{
+        height: 60px;
+        width: 60px;
+        top:1%;
+        left:61%;
+    }
+    .img-pod{
+        height: 120px;
+        width: 120px;
+    }
+    .cloud_win{
+        height: 80px;
+        left: 23%;
+    }
+    .open_cloud{
+        left:24%;
+    }
+    .cloud_sec{
+        height: 80px;
+        left:68%;
+    }
+    .open_cloud_sec{
+        left:67.5%;
+    }
+    .win{
+        top:5%;
+        left: 27.5%;
+    }
+    .lose{
+        top:5%;
+        left:70.5%;
+    }
+}
