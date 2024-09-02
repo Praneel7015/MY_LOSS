@@ -33,7 +33,7 @@ const questions = [
     },
     {
         question: "How much RAM does Your System Have?",
-        options: ["x1-4 Gigs", "8 Gigs", "16 Gigs or above", "IWHAT'S THAT"]
+        options: ["x1-4 Gigs", "8 Gigs", "16 Gigs or above", "WHAT'S THAT"]
     },
     {
         question: "What is your computer knowledge level?",
@@ -41,7 +41,7 @@ const questions = [
     },
     {
         question: "Privacy Oriented?",
-        options: ["Yes", "No", "Its good if its there, don't care much", "What's that?"]
+        options: ["Yes", "No", "Its good if its there, don't care much", "WHAT'S THAT?"]
     },
     {
         question: "Coding or other Intensive Processes?",
