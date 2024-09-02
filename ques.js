@@ -29,11 +29,11 @@ const questions = [
     },
     {
         question: "What is your Systems CPU Architecture?",
-        options: ["x86_64 / AMD64", "x32 / AMD32", "ARM64", "I HAVE NO IDEA WHAT THAT MEANS"]
+        options: ["x86_64 / AMD64", "x32 / AMD32", "ARM64", "WHAT'S THAT?"]
     },
     {
         question: "How much RAM does Your System Have?",
-        options: ["x1-4 Gigs", "8 Gigs", "16 Gigs or above", "I HAVE NO IDEA WHAT THAT MEANS"]
+        options: ["x1-4 Gigs", "8 Gigs", "16 Gigs or above", "IWHAT'S THAT"]
     },
     {
         question: "What is your computer knowledge level?",
