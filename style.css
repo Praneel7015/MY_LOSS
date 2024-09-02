@@ -1961,7 +1961,7 @@ body {
     }
     /*podium*/
     body{
-        background-image: url("/images/tech-op-mob-2.jpg");
+        background-image: url("images/tech-op-mob-2.jpg");
         background-size: cover ;
     }
     .podium {
