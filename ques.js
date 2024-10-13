@@ -9,7 +9,7 @@ const questions = [
     },
     {
         question: "What is your Knowledge Level of linux?",
-        options: ["Previously used linux before", " I've used linux a fair bit", "Not So Much", "What is linux"]
+        options: ["Linux User", " I've used linux a fair bit", "Not So Much", "What is linux"]
     },
     {
         question: "Preinstalled Requisites?",
@@ -21,10 +21,10 @@ const questions = [
     },
     {
         question: "What is the Age of your system?",
-        options: ["Brand New - 2 (or) 3 Years old", "4 to 7 years Old", "7<= Years Old", "Dinosaur"]
+        options: ["Brand New 2/3 Years old", "4 to 7 years Old", "7<= Years Old", "Dinosaur"]
     },
     {
-        question: "What Operating System Did You Use Before?",
+        question: "Previous Operating System?",
         options: ["Windows", "Linux", "MacOS", "Temple OS"]
     },
     {
@@ -32,28 +32,28 @@ const questions = [
         options: ["x86_64 / AMD64", "x32 / AMD32", "ARM64", "WHAT'S THAT?"]
     },
     {
-        question: "How much RAM does Your System Have?",
+        question: "How much RAM do Ysou Have?",
         options: ["x1-4 Gigs", "8 Gigs", "16 Gigs or above", "WHAT'S THAT"]
     },
     {
-        question: "What is your computer knowledge level?",
-        options: ["I know my stuff", "I know my fair bit", "I know enough to run my laptop", "I don't know much"]
+        question: "Computer knowledge level?",
+        options: ["I know my stuff", "I know my fair bit", "Enough to run my laptop", "I don't know much"]
     },
     {
         question: "Privacy Oriented?",
-        options: ["Yes", "No", "Its good if its there, don't care much", "WHAT'S THAT?"]
+        options: ["Yes", "No", "Don't care much", "WHAT'S THAT?"]
     },
     {
-        question: "Coding or other Intensive Processes?",
-        options: ["Yes", "Not Really", "No", "For Checking Mails and Excel"]
+        question: "Intensive Processes?",
+        options: ["Yes", "Not Really", "No", "Mails and Excel"]
     },
     {
         question: "Gaming?",
-        options: ["Yes", "Light Gaming", "Indie Games", "No"]
+        options: ["AAA Gaming", "Moderate Gaming", "Light Games", "Non-Gaming"]
     },
     {
         question: "Often Updates Required?",
-        options: ["Yes", "Don't Care that much", "Nah", "Maybe?"]
+        options: ["Yes", "Don't Care", "Nah", "Maybe?"]
     }
 ];
 
